@@ -4,10 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-isAdult = true
+let isAdult = true
   return (
 <>
-  <snap>(isAdult ? "da" : "net")</snap>
+  <snap>{isAdult ? "da" : "net"}</snap>
+  <snap>{isAdult ? "da" : "net"}</snap>
 </>
   )
 }

@@ -4,13 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-let isAdult = true
-  return (
-<>
-  <snap>{isAdult ? "da" : "net"}</snap>
-  <snap>{isAdult ? "da" : "net"}</snap>
-</>
-  )
+	const isAdult = !true;
+	let text;
+
+  if (isAdult) {
+		text = <p>18</p>;
+	}else{
+    text = <p>-18</p>;
+  }
+
+	return <div>
+    {text}
+	</div>;
+  // 26 урок
 }
 
 export default App
